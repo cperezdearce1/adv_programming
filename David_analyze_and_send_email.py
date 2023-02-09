@@ -19,8 +19,8 @@ def send_email(subject, body, recipient):
 
 
 def main():
-    repo_name = "San-Francisco-House-Price"
-    url = f"https://api.github.com/repos/dtjah/{repo_name}/commits"
+    repo_name = "adv_programming-repo"
+    url = f"https://api.github.com/repos/team3-adv-prog/{repo_name}/commits"
     response = requests.get(url)
     data = response.json()
     new_commit = data[0]["sha"]
