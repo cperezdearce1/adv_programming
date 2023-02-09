@@ -25,7 +25,7 @@ def main():
     data = response.json()
     new_commit = data[0]["sha"]
     
-    recipient = "dtjahjadi1@babson.edu", "hwidanti1@babson.edu"
+    recipient = "dtjahjadi1@babson.edu", "hwidanti1@babson.edu", "cperezdearce1@babson.edu", "ssaeed1@babson.edu", "ldominguezjimenez1@babson.edu"
     message = f"The repository {repo_name} has been updated with a new commit: {new_commit}\n\nBest regards,\nDavid Setiawan Tjahjadi"
     send_email("Github repository update", message, recipient)
 
